@@ -62,12 +62,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CameraMovement.cs" />
-    <Compile Include="Assets\NavMeshMover.cs" />
-    <Compile Include="Assets\PlayerMovementRayCast.cs" />
-    <Compile Include="Assets\PlayerNavMover.cs" />
-    <Compile Include="Assets\PlayerRayCast.cs" />
-    <Compile Include="Assets\PlayerSelectionMarker.cs" />
+    <Compile Include="Assets\Scripts\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\EnemyMoveDirectlyTo.cs" />
+    <Compile Include="Assets\Scripts\NavMeshMover.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovementRayCast.cs" />
+    <Compile Include="Assets\Scripts\PlayerNavMover.cs" />
+    <Compile Include="Assets\Scripts\PlayerRayCast.cs" />
+    <Compile Include="Assets\Scripts\PlayerSelectionMarker.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/David/Documents/Github/AiNavigationExercise/Ai Navigation Exercisse/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
