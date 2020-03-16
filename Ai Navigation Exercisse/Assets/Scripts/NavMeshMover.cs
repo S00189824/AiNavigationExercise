@@ -11,6 +11,7 @@ public class NavMeshMover : MonoBehaviour
     public event ReachDestinationDelegate ReachedDestination;
     protected NavMeshAgent agent;
     public float RangeThreshold = 0.1f;
+    Color DebugLineColor = Color.red;
 
     // Start is called before the first frame update
     public virtual void Start()
@@ -25,7 +26,7 @@ public class NavMeshMover : MonoBehaviour
 
     public virtual void MoveTo(GameObject position)
     {
-        agent.SetDestination(gameObject.transform.position);
+        agent.SetDestination(position.transform.position);
     }
 
     public virtual void Stop()
@@ -59,5 +60,24 @@ public class NavMeshMover : MonoBehaviour
         }
 
         
+    }
+
+
+    private void OnDrawGizmos()
+    {
+        if (agent != null)
+        {
+            if (agent.pathStatus != NavMeshPathStatus.PathInvalid)
+            {
+                for (int i = 0; i < agent.path.corners.Length; i++)
+                {
+                    if (i + 1 < agent.path.corners.Length)
+                    {
+                        Gizmos.color = DebugLineColor;
+                        Gizmos.DrawLine(agent.path.corners[i], agent.path.corners[i + 1]);
+                    }
+                }
+            }
+        }
     }
 }

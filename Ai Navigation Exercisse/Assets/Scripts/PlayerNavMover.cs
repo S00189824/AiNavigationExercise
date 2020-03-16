@@ -8,7 +8,7 @@ public class PlayerNavMover : NavMeshMover
 
     public GameObject PlayerController;
 
-    public Color DebugLineColor { get; private set; }
+    public Color DebugLineColor = Color.green;
 
 
     // Use this for initialization
