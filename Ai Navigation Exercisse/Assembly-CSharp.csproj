@@ -64,8 +64,10 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\EnemyMoveDirectlyTo.cs" />
+    <Compile Include="Assets\Scripts\EnemyMoveOnTrigger.cs" />
     <Compile Include="Assets\Scripts\EnemyMoveWithinDistance.cs" />
     <Compile Include="Assets\Scripts\NavMeshMover.cs" />
+    <Compile Include="Assets\Scripts\OntriggerExit.cs" />
     <Compile Include="Assets\Scripts\PlayerMovementRayCast.cs" />
     <Compile Include="Assets\Scripts\PlayerNavMover.cs" />
     <Compile Include="Assets\Scripts\PlayerRayCast.cs" />
