@@ -11,7 +11,7 @@ public class NavMeshMover : MonoBehaviour
     public event ReachDestinationDelegate ReachedDestination;
     protected NavMeshAgent agent;
     public float RangeThreshold = 0.1f;
-    Color DebugLineColor = Color.red;
+    public Color DebugLineColor = Color.red;
 
     // Start is called before the first frame update
     public virtual void Start()
@@ -63,7 +63,7 @@ public class NavMeshMover : MonoBehaviour
     }
 
 
-    private void OnDrawGizmos()
+    public virtual void OnDrawGizmos()
     {
         if (agent != null)
         {

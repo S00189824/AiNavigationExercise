@@ -129,6 +129,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5196933235448830161, guid: 37bcff2c9a5934c4f8facd025c0ccd98,
+        type: 3}
+      propertyPath: m_Speed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5196933235448830163, guid: 37bcff2c9a5934c4f8facd025c0ccd98,
         type: 3}
       propertyPath: m_Name
@@ -189,6 +194,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5196933235448830167, guid: 37bcff2c9a5934c4f8facd025c0ccd98,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d62334fdec4694d42a434615b263bbe7, type: 2}
     m_RemovedComponents:
     - {fileID: 5196933235448830162, guid: 37bcff2c9a5934c4f8facd025c0ccd98, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 37bcff2c9a5934c4f8facd025c0ccd98, type: 3}
@@ -198,7 +208,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh14046
+  m_Name: pb_Mesh14044
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -734,7 +744,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh13868
+  m_Name: pb_Mesh13876
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -897,7 +907,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh13994
+  m_Name: pb_Mesh13990
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1060,7 +1070,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh13952
+  m_Name: pb_Mesh13942
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1708,7 +1718,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh13892
+  m_Name: pb_Mesh13900
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1998,7 +2008,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh14006
+  m_Name: pb_Mesh14004
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2846,7 +2856,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh13964
+  m_Name: pb_Mesh13956
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3330,6 +3340,28 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 11.004001, y: 1.302, z: -0.5}
   m_TimeToStationary: 0.5
+--- !u!1 &1691908280 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5196933235448830163, guid: 37bcff2c9a5934c4f8facd025c0ccd98,
+    type: 3}
+  m_PrefabInstance: {fileID: 2411649}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1691908286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691908280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bde348dd37297d4281a2cf550bde3e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RangeThreshold: 0.1
+  DebugLineColor: {r: 1, g: 0, b: 0, a: 1}
+  tagToTrack: Player
+  TrackingDistance: 7
 --- !u!1 &1692925168
 GameObject:
   m_ObjectHideFlags: 0
@@ -3684,7 +3716,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh14034
+  m_Name: pb_Mesh14032
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4185,6 +4217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RangeThreshold: 0.1
+  DebugLineColor: {r: 1, g: 0, b: 0, a: 1}
   PlayerController: {fileID: 1209562853}
   DebugLineColor: {r: 0.2820827, g: 0.7169812, b: 0.19277322, a: 1}
 --- !u!195 &1965403237
@@ -4290,7 +4323,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh13978
+  m_Name: pb_Mesh13972
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
